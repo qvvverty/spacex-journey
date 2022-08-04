@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/spacex-journey/static/css/main.792ad005.css",
+    "main.css": "/spacex-journey/static/css/main.e54762c5.css",
     "main.js": "/spacex-journey/static/js/main.5704925a.js",
     "static/js/787.9dcf4000.chunk.js": "/spacex-journey/static/js/787.9dcf4000.chunk.js",
     "static/media/background.png": "/spacex-journey/static/media/background.c9777e2db4f6fb19b488.png",
     "static/media/Museo_Sans_Cyrl_700.ttf": "/spacex-journey/static/media/Museo_Sans_Cyrl_700.4e63f06b4aa58983885e.ttf",
     "static/media/Museo_Sans_Cyrl_100.otf": "/spacex-journey/static/media/Museo_Sans_Cyrl_100.f0e6808e055f201187da.otf",
     "index.html": "/spacex-journey/index.html",
-    "main.792ad005.css.map": "/spacex-journey/static/css/main.792ad005.css.map",
+    "main.e54762c5.css.map": "/spacex-journey/static/css/main.e54762c5.css.map",
     "main.5704925a.js.map": "/spacex-journey/static/js/main.5704925a.js.map",
     "787.9dcf4000.chunk.js.map": "/spacex-journey/static/js/787.9dcf4000.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.792ad005.css",
+    "static/css/main.e54762c5.css",
     "static/js/main.5704925a.js"
   ]
 }
