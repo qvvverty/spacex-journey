@@ -1,0 +1,187 @@
+.header-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+
+  max-width: 1920px;
+  min-width: 1170px;
+
+  border: 1px solid #3d343d;
+}
+
+@media (max-width: 1280px) {
+  .header-wrapper {
+    padding: 0 30px;
+    min-width: 0;
+  }
+}
+
+.header {
+  margin-left: auto;
+  margin-right: auto;
+
+  max-width: 1170px;
+  height: 100px;
+
+  display: flex;
+  align-items: center;
+}
+
+.logo-wrapper {
+  margin-right: 131px;
+
+  width: 315px;
+  height: 98px;
+
+  border: 1px solid #2e2d30;
+
+  background-image: url(../img/logo.png);
+  background-repeat: no-repeat;
+
+  cursor: pointer;
+}
+
+@media (max-width: 1240px) {
+  .logo-wrapper {
+    margin-right: 0;
+  }
+}
+
+.has-corners {
+  position: relative;
+}
+
+.border-corner {
+  position: absolute;
+
+  width: 6px;
+  height: 6px;
+}
+
+.border-corner-1 {
+  top: -1px;
+  left: -1px;
+
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+}
+
+.border-corner-2 {
+  top: -1px;
+  right: -1px;
+
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+}
+
+.border-corner-3 {
+  bottom: -1px;
+  right: -1px;
+
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
+}
+
+.border-corner-4 {
+  bottom: -1px;
+  left: -1px;
+
+  border-bottom: 1px solid white;
+  border-left: 1px solid white;
+}
+
+.hidden {
+  display: none;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.button:nth-last-of-type(1) {
+  margin-right: 0;
+}
+
+@media (max-width: 1100px) {
+  .menu {
+    position: absolute;
+    top: -585px;
+    right: 29px;
+
+    padding: 30px 30px;
+
+    flex-direction: column;
+    align-items: flex-end;
+
+    opacity: 0;
+    z-index: 2;
+
+    pointer-events: none;
+    transition: 1s;
+    
+    border: 1px solid #2e2d30;
+    background-color: #1c222c;
+  }
+}
+
+.menu-visible {
+  opacity: 1;
+  pointer-events: all;
+  top: 85px;
+}
+
+.burger-button {
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  width: 50px;
+  height: 50px;
+
+  color: white;
+  font-size: 50px;
+
+  cursor: pointer;
+}
+
+@media (max-width: 1100px) {
+  .burger-button {
+    display: block;
+  }
+}
+
+@media (max-width: 765px) {
+  .header-wrapper {
+    border: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .header-wrapper {
+    padding: 0 0 0 10px;
+  }
+
+  .burger-button {
+    right: 10px;
+  }
+
+  .menu {
+    right: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .logo-wrapper {
+    width: 200px;
+    height: 70px;
+
+    background-size: contain;
+    background-position: 50% 55%;
+  }
+
+  .burger-button {
+    font-size: 40px;
+    top: 28px;
+  }
+}

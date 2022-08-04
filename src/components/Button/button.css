@@ -1,0 +1,31 @@
+.button {
+  margin-right: 40px;
+  padding: 10px 0;
+
+  white-space: nowrap;
+
+  color: white;
+
+  cursor: pointer;
+
+  list-style: none;
+}
+
+.button:hover {
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid darkgray;
+
+  color: darkgray;
+}
+
+@media (max-width: 1100px) {
+  .button {
+    margin-right: 0;
+    border-bottom: 1px solid transparent;
+  }
+
+  .button:hover {
+    border-top: none;
+    border-bottom-color: darkgray;
+  }
+}

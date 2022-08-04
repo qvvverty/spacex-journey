@@ -1,38 +1,41 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: "Museo Sans Cyrl 100";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/Museo_Sans_Cyrl_100.otf");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: "Museo Sans Cyrl 700";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/Museo_Sans_Cyrl_700.ttf");
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body {
+  font-family: "Museo Sans Cyrl 100", "Arial", sans-serif;
+
+  background-image: url(./components/img/background.png);
+  background-repeat: no-repeat;
+  background-position: top;
+
+  background-color: #141820;
+}
+
+@media (max-width: 765px) {
+  body {
+    background-position: 50% -100px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 500px) {
+  body {
+    background-position: 50% -125px;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (max-width: 310px) {
+  body {
+    background-position: 50% -140px;
   }
 }

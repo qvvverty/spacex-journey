@@ -1,0 +1,145 @@
+.advantage-card {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-right: 10px;
+  margin-bottom: 10px;
+
+  width: 185px;
+  height: 185px;
+
+  cursor: pointer;
+}
+
+.advantage-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  opacity: 0.1;
+
+  background-image: linear-gradient(155deg, transparent 60%, white);
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.advantage-card:hover::before {
+  opacity: 0.2;
+}
+
+@media (max-width: 1170px) {
+  .advantage-card:nth-of-type(3) span {
+    color: rgb(117, 97, 97);
+  }
+}
+
+.advantage-text {
+  display: block;
+
+  color: #ececec;
+}
+
+.advantage-text-1-line {
+  margin-top: 7px;
+  margin-bottom: 14px;
+
+  font-size: 16px;
+}
+
+.advantage-card:nth-of-type(n + 3) .advantage-text-1-line {
+  margin-top: -6px;
+}
+
+.advantage-text-2-line {
+  margin-bottom: -7px;
+
+  font-family: "Museo Sans Cyrl 700";
+  font-size: 60px;
+}
+
+.advantage-text-2-line-small {
+  display: inline;
+  font-size: 20px;
+}
+
+.advantage-text-3-line {
+  font-size: 18px;
+}
+
+@media (max-width: 890px) {
+  .advantage-card {
+    width: 140px;
+    height: 140px;
+  }
+
+  .advantage-text-1-line {
+    font-size: 12px;
+  }
+
+  .advantage-text-2-line {
+    font-size: 50px;
+  }
+
+  .advantage-text-2-line-small {
+    font-size: 14px;
+  }
+
+  .advantage-text-3-line {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 800px) {
+  .advantage-card {
+    width: 125px;
+    height: 125px;
+  }
+}
+
+@media (max-width: 765px) {
+  .advantage-card:nth-of-type(3) span {
+    color: #ececec;
+  }
+
+  .advantage-card {
+    width: 150px;
+    height: 150px;
+  }
+
+  .advantage-card:nth-of-type(n + 3) .advantage-text-1-line {
+    margin-top: 7px;
+  }
+}
+
+@media (max-width: 500px) {
+  .advantage-text-1-line {
+    font-size: 12px;
+  }
+
+  .advantage-text-2-line {
+    font-size: 40px;
+  }
+
+  .advantage-text-2-line-small {
+    font-size: 14px;
+  }
+
+  .advantage-text-3-line {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 350px) {
+  .advantage-card {
+    width: 125px;
+    height: 125px;
+  }
+}
